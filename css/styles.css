@@ -3,11 +3,12 @@
 .container{
     width: 100%;
 
+
 }
 .bigtitle{
     font-family: 'Spectral', serif;
     font-size: 2rem;
-    padding:3rem;
+    padding: 3rem;
 
 }
 
@@ -15,7 +16,6 @@
     font-family: 'Karla', sans-serif;
     font-size: 1rem;
     padding:0.5rem;
-
 }
 
 
@@ -29,8 +29,11 @@
 
 
 .container{
-    
     background-color:#fff7ebc5;
+    width: 100%;
+    padding: 0;
+    margin-left: 5;
+    justify-content: center
 }
 
 
@@ -130,6 +133,7 @@
 .footercontent{
     font-family: 'Karla', sans-serif;
     color:rgba(0, 0, 0, 0.772);
+    margin-top: 1em
 }
 
 
