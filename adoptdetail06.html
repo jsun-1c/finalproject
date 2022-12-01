@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <!-- icon -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla&family=Spectral:wght@300;400&display=swap" rel="stylesheet">
+
+        <!-- Stylesheet -->
+        <link type="text/css" rel="stylesheet" href="css/styles.css" >
+
+        <title>Comp126 Final Project</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <div>
+                    <h1 class="bigtitle">Pets & Co.</h1>
+                </div>
+            </header>
+            
+            <!-- Navbard -->
+            <nav class="navbar navbar-expand-md navbar-light col-12">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class=" navtitle nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navtitle nav-link" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navtitle nav-link " href="adopt.html">Adopt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navtitle nav-link" href="appointments.html">Appointment</a>
+                            </li>
+                        </ul>
+            
+                        <!-- Search button with icon -->
+                        <form class="d-flex search">
+                            <input class="form-control navtitle" type="search" placeholder="Search" >
+                                <button class="btn btn-outline-dark" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <div class="block adoptcards flex-wrap">
+                
+                <div class="card m-2 col-lg-6">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <img src="img/6.jpg" class="img-fluid" alt="card-horizontal-image">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="bigcontent">
+                                <h5 class="card-title">Hi my name is Bonbon.</h5>
+                                <h5 class="card-title">I'm ready to go home with you!</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-2 col-lg-5 m-lg-8">
+                    <div class="row g-0">
+                        <div class="col-5 infobg1">
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="adoptcontent">
+                                <p class="card-text intro"> 
+                                    I am a loving bunny, although I am quite shy around people. It will take some time and patience for me to become used to my new family, but regular contact should help me to open up. When you come to take me up, I get a little anxious, but if you move slowly and chat to me, I love to snuggle! I can't bear to be apart from my brother so plz brings both of us to your home.</p>
+                                <p class="card-text"> Animal ID: BA1046 </p>
+                                <p class="card-text"> Species: Rabbit </p>
+                                <p class="card-text"> Age: 9 months</p>
+                                <p class="card-text"> Gender: Female </p>
+                                <p class="card-text"> Size: Small</p>
+                                <p class="card-text"> Color: Black</p>
+                                <p class="card-text"> Spayed/Neutered: No</p>
+                                <p class="card-text"> Declawed: No</p>
+                                <p class="card-text"> Adoption Fee: $50.00</p>
+
+                                <button type="button" class="btn buttoncolor read" onclick="location.href='appointments.html'" >Appointment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="img5">
+                <footer>
+                    <nav>
+                        <ul class="footer">
+                            <p class="footercontent">Tel:555-555-5555</p>
+                            <p class="footercontent">Email: pets&co@email.com</p>
+                            <p class="footercontent">Address: 8182 University Dr, Chapel Hill, NC 27514 </p>
+                    </nav>
+                </footer>
+            </div>
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        -->
+
+
+
+    </body>
+
+
+</html>
