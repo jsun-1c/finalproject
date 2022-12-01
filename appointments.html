@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <!-- icon -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla&family=Spectral:wght@300;400&display=swap" rel="stylesheet">
+
+        <!-- Stylesheet -->
+        <link type="text/css" rel="stylesheet" href="css/styles.css">
+
+
+        <title>Comp126 Final Project</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <div>
+                    <h1 class="bigtitle">Pets & Co.</h1>
+                </div>
+            </header>
+            
+            <!-- Navbard -->
+            <nav class="navbar navbar-expand-md navbar-light col-12">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="navtitle nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navtitle nav-link active" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navtitle nav-link " href="adopt.html">Adopt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navtitle nav-link" href="appointments.html">Appointments</a>
+                            </li>
+                        </ul>
+            
+                        <!-- Search button with icon -->
+                        <form class="d-flex search">
+                            <input class="form-control navtitle" type="search" placeholder="Search">
+                                <button class="btn btn-outline-dark" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </nav>
+            <div class="grid-container">
+                <div class="storehours">
+                  <h4>Store Hours</h4>
+                  <p>Mon-Fri: 9am-5pm</p>
+                  <p>Sat-Sun: 9am-3pm</p>
+                </div>
+              <div class="apptsform">
+                <form action="thankyou.html" method="post">
+                  <h1>Book an Appointment</h1>
+                
+                  <fieldset>
+                    <legend>Owner Information</legend>
+                  <div class="ownerflexbox">
+                
+                   <div class="ownerflexbox1"> <label for="name">Name</label>
+                <div class="flexboxname">
+                    <input class="flexboxfirstname" type="text" id="name" name="user_name" placeholder="First" value="" required>
+                    <input class="flexboxlastname" type="text" id="name" name="user_name" placeholder="Last" value="" required>
+                  </div>
+                </div>
+                <div class="ownerflexbox2">
+                    <label for="phone">Phone</label>
+                    <div class="flexboxphone">
+              <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx" required>
+              </div>
+              </div>
+              </div>
+              
+                   
+                  </fieldset>
+              
+                  <fieldset>
+                    <legend>Pet Information</legend>
+                <div class="petinfoflexbox">
+                    <div class="petinfo1"><label for="name">Name</label>
+                    <input type="text" id="name" name="user_name" value="" required></div>
+              
+                    <div class="petinfo2"><label for="pet_type">Type</label>
+              <div class="selectdropdown">
+                      <select id="pet_type" name="pet_type" >
+                      <optgroup label="Pet Type">
+                        <div><option value="Select">Select</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  
+                  </div>
+                  <div class="petinfo3">
+                    <label for="birthday">Birthdate</label>
+                <input type="date" id="birthday" name="birthday">
+              </div>
+                </div
+              </fieldset>
+              
+              <fieldset>
+                    <legend>Service</legend>
+                <div class="serviceflexbox">
+                  <div class="serviceflex1">
+                    <label for="service_type">Service Type</label>
+                    <select id="service_type" name="service_type">
+                      <optgroup >
+                        <option value="grooming">Grooming</option>
+                        <option value="walking">Walking</option>
+                        <option value="training">Training</option>
+                        <option value="select">Select</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <div class="serviceflex2">
+                    <label for="birthday">Date</label>
+                <input type="date" id="birthday" name="birthday">
+                  </div>
+              
+                  <div class="serviceflex3">
+                <label for="appt">Time</label>
+              
+                <select id="time" name="time">
+                  <optgroup >
+                    <option value="select">Select</option>
+                    <option value="9">9:00 am</option>
+                    <option value="10">10:00 am</option>
+                    <option value="11">11:00 am</option>
+                    <option value="12">12:00 pm</option>
+                    <option value="1">1:00 pm</option>
+                    <option value="2">2:00 pm</option>
+                    <option value="3">3:00 pm</option>
+                    <option value="4">4:00 pm</option>
+                  </optgroup>
+                </select>
+              </div>
+                
+                   
+              </div>
+                  </fieldset>
+                
+                  <button class="apptsformbutton" type="submit" href="thankyou.html">Book Now</button>
+                
+                
+                </form>
+              </div>
+              <div class="sideimagepets"></div>
+            <div class="whole">
+                <div class = "flexbox">
+
+                    <div class="img5">
+                        <footer>
+                            <nav>
+                                <ul class="footer">
+                                    <p class="footercontent">Tel:555-555-5555</p>
+                                    <p class="footercontent">Email: pets&co@email.com</p>
+                                    <p class="footercontent">Address: 8182 University Dr, Chapel Hill, NC 27514 </p>
+                            </nav>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        -->
+
+
+
+    </body>
+
+
+</html>
