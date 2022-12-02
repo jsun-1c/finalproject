@@ -72,7 +72,7 @@
                   <p>Sat-Sun: 9am-3pm</p>
                 </div>
               <div class="apptsform">
-                <form action="thankyou.html" method="post">
+                <form action="/" method="post">
                   <h1>Book an Appointment</h1>
                 
                   <fieldset>
@@ -128,7 +128,7 @@
                   <div class="serviceflex1">
                     <label for="service_type">Service Type</label>
                     <select id="service_type" name="service_type">
-                      <optgroup >
+                      <optgroup label="Service Type" >
                         <option value="grooming">Grooming</option>
                         <option value="walking">Walking</option>
                         <option value="training">Training</option>
@@ -145,7 +145,7 @@
                 <label for="appt">Time</label>
               
                 <select id="time" name="time">
-                  <optgroup >
+                  <optgroup label="Time" >
                     <option value="select">Select</option>
                     <option value="9">9:00 am</option>
                     <option value="10">10:00 am</option>
@@ -163,30 +163,32 @@
               </div>
                   </fieldset>
                 
-                  <button class="apptsformbutton" type="submit" href="thankyou.html">Book Now</button>
-                
+                  <!-- <button class="apptsformbutton" type="submit" onclick="location.href="adoptdetail01.html">Book Now</button> -->
+                  <button type="button" class="apptsformbutton" onclick="location.href='appointments2.html'" >Book Now</button>
                 
                 </form>
               </div>
               <div class="sideimagepets"></div>
-            <div class="whole">
-                <div class = "flexbox">
+            </div>
+            <!-- <div class="whole">
+                <div class = "flexboxapptsfooter"> -->
 
-                    <div class="img5">
-                        <footer>
-                            <nav>
-                                <ul class="footer">
-                                    <p class="footercontent">Tel:555-555-5555</p>
-                                    <p class="footercontent">Email: pets&co@email.com</p>
-                                    <p class="footercontent">Address: 8182 University Dr, Chapel Hill, NC 27514 </p>
-                            </nav>
-                        </footer>
-                    </div>
+                  <div class="img5">
+                    <footer>
+                        <nav>
+                            <ul class="footer">
+                                <p class="footercontent">Tel:555-555-5555</p>
+                                <p class="footercontent">Email: pets&co@email.com</p>
+                                <p class="footercontent">Address: 8182 University Dr, Chapel Hill, NC 27514 </p>
+                        </nav>
+                    </footer>
+                </div>
+    
                 </div>
             </div>
 
 
-        </div>
+        
         </div>
 
         <!-- Optional JavaScript; choose one of the two! -->
