@@ -168,7 +168,7 @@
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr 8fr
     margin: 10px;
     gap:10px;
     font-family: 'Karla', sans-serif;
@@ -180,7 +180,7 @@
     text-align: center;
     background: #fff7eb;
     grid-column:1/2;
-    grid-row:1/2;
+    grid: row 1px / 2px;;
   }
   .apptsform {
     grid-column:1/2;
@@ -287,9 +287,7 @@
   .flexboxphone{
     flex: 1 1 8em;
   }
-  .sideimagepets{
-    min-height: 0;
-  }
+  
 
 .appointments2card{
   height:40vh;
@@ -416,5 +414,14 @@
 }
 .appointments2card{
   height:80vh;
+}
+.footer{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+.homepagefooter{
+  height:10vh;
 }
 }
