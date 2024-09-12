@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+       
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla&family=Spectral:wght@300;400&display=swap" rel="stylesheet">
+
+
+        <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+
+
+        <title>Comp126 Final Project</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <div>
+                    <h1 class="bigtitle">Pets & Co.</h1>
+                </div>
+            </header>
+            <nav class="navbar navbar-expand-md navbar-light col-12">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="navtitle nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navtitle nav-link active" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navtitle nav-link " href="adopt.html">Adopt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navtitle nav-link" href="appointments.html">Appointments</a>
+                            </li>
+                        </ul>
+           
+ 
+
+                        <form class="d-flex search">
+                            <input class="form-control navtitle" type="search" placeholder="Search" >
+                                <button class="btn btn-outline-dark" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                        </form>
+                       
+                    </div>
+                </div>
+            </nav>
+
+            <div class="whole">
+                <div class = "flexbox">
+
+                    <div class="container mt-2">
+                        <div class="checkout container">
+                        <div class="main-box">
+
+                            <div class="col-md-8 mb-4 shipping">
+                                <div class="card shipping mb-4">
+                                  <div class="card-title">
+                                    <h4>1. Shipping address</h4>
+                                  </div>
+                                  <div class="card-body delivery">
+                                    <form>
+                       
+                                      <div class="row mb-4">
+                                        <div class="col">
+                                          <div class="form-outline">
+                                            <input type="text" id="form11Example1" class="form-control" />
+                                            <label class="form-label" for="form11Example1">First name</label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="form-outline">
+                                            <input type="text" id="form11Example2" class="form-control" />
+                                            <label class="form-label" for="form11Example2">Last name</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                       
+
+                                      <div class="form-outline mb-4">
+                                        <input type="text" id="form11Example4" class="form-control" />
+                                        <label class="form-label" for="form11Example4">Address</label>
+                                      </div>
+                       
+
+                                      <div class="form-outline mb-4">
+                                        <input type="email" id="form11Example5" class="form-control" />
+                                        <label class="form-label" for="form11Example5">Email</label>
+                                      </div>
+                       
+
+                                      <div class="form-outline mb-4">
+                                        <input type="number" id="form11Example6" class="form-control" />
+                                        <label class="form-label" for="form11Example6">Phone</label>
+                                      </div>
+                       
+
+                                      <div class="form-outline mb-4">
+                                        <textarea class="form-control" id="form11Example7" rows="2"></textarea>
+                                        <label class="form-label" for="form11Example7">Additional information</label>
+                                      </div>
+                                    </form>
+                                   
+                                  </div>
+                       
+                                </div>
+
+                       
+                              </div>
+                          </div>
+                          <div class="card-body payment">
+                            <h5 class="card-title">2. Enter Payment details</h5>
+                            <div class="row">
+                                <div class="col-md-auto col-sm-auto ">
+                                    <div class="custom-control custom-radio custom-control-inline "> <input id="customRadioInline11" type="radio" name="customRadioInline11" class="custom-control-input" checked="true"> <label for="customRadioInline11" class="custom-control-label label-radio"><img src="https://img.icons8.com/color/48/000000/visa.png" class="card-image"> </label> </div>
+                                </div>
+                                <div class="col-md-auto col-sm">
+                                    <div class="custom-control custom-radio custom-control-inline "> <input id="customRadioInline22" type="radio" name="customRadioInline11" class="custom-control-input"> <label for="customRadioInline22" class="custom-control-label label-radio"><img src="https://img.icons8.com/officel/48/000000/discover.png" class="card-image"></label> </div>
+                                </div>
+                            </div>
+                            <form method="get" action="">
+                                <div class="form-group ol-md-9 col-sm-10"> <label for="cc-number" class="control-label mt-3">Card number</label> <input id="cc-number" name="cc-number" type="tel" placeholder="xxxx-xxxx-xxxx-xxxx" class="form-control form-control-lg cc-number identified visa " value="" data-val="true" data-val-required="Please enter the card number" data-val-cc-number="Please enter a valid card number" autocomplete="cc-number"> </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4 col-sm-4"> <label for="cc-exp" class="control-label ">Expiration date</label> <input id="cc-exp" type="tel" class=" form-control form-control-lg cc-exp" autocomplete="cc-exp" placeholder="MM / YY" required> </div>
+                                    <div class="form-group col-md-4 col-sm-4"> <label for="cc-cvc" class="control-label ">CVV<span><i class="fa fa-info-circle px-2" aria-hidden="true"></i> </span> </label> <input id="cc-cvc" type="tel" class="form-control-lg form-control cc-cvc " autocomplete="off" placeholder="&bull;&bull;&bull;" required> </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6 col-sm-6"> <label for="inputState">Country</label> <select id="inputState" class="form-control form-control-lg">
+                                            <option selected>United States</option>
+                                        </select> </div>
+                                    <div class="form-group col-md-4 col-sm-6"> <label for="inputZip">Zip</label> <input type="text" class="form-control form-control-lg" id="inputZip" placeholder="111111"> </div>
+                                    <a href="#" class="btn check btn-secondary" role="button" aria-label="button">CHECK OUT</a>
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="img5">
+                        <footer>
+                            <nav>
+                                <ul class="footer">
+                                    <p class="footercontent">Tel:555-555-5555</p>
+                                    <p class="footercontent">Email: pets&co@email.com</p>
+                                    <p class="footercontent">Address: 8182 University Dr, Chapel Hill, NC 27514 </p>
+                            </nav>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    </body>
+
+
+</html>

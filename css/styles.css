@@ -16,12 +16,13 @@
     padding:0.5rem;
 }
 
-
-
 .picturetitle{
     font-family: 'Karla', sans-serif;
-    color:white;
+    color:#261c15;
     font-size: 2rem;
+}
+.picturetitle:hover{
+  color:#4fc5c1
 }
 
 
@@ -61,7 +62,7 @@
         }
 
 .img1{
-    background-image: url("img/img1.jpg");
+    background-image: url("/img/img1.jpg");
     width:100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,7 +74,7 @@
 }
 
 .img2{
-    background-image: url("img/img2.jpg");
+    background-image: url("/img/img2.jpg");
     width:100%;
     height: 30%;
     background-repeat: no-repeat;
@@ -85,7 +86,7 @@
 }
 
 .img3{
-    background-image: url("img/img3.jpg");
+    background-image: url("/img/img3.jpg");
     width:100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,7 +98,7 @@
 }
 
 .img4{
-    background-image: url("img/img4.jpg");
+    background-image: url("/img/img4.jpg");
     width:100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -167,7 +168,10 @@
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 8fr;
+    margin: 10px;
+    gap:10px;
+    font-family: 'Karla', sans-serif;
   }
   .storehours{
     border: 1px solid #261c15;
@@ -175,25 +179,21 @@
     padding: 15px;
     text-align: center;
     background: #fff7eb;
-    /* min-width: 420px; */
-    /* margin: 10px auto; */
     grid-column:1/2;
-    grid-row:1/2;
+    grid: row 1px / 2px;;
   }
   .apptsform {
-    /* max-width: 500px; */
     grid-column:1/2;
     grid-row:2/3;
-    /* margin: 10px auto; */
-    padding: 10px ;
+    padding: 20px;
     background: #fff7eb;
     border-radius: 8px;
     border: 1px solid #261c15;
   }
   
   h1 {
-    margin-left: 15px;
     text-align:left;
+    font-family: 'spectral', sans-serif;
   
   }
   
@@ -203,20 +203,14 @@
   input[type="number"],
   input[type="tel"],
   input[type="time"],
-  input[type="url"],
   textarea,
   select {
     background: rgba(255, 255, 255, 0.1);
-    border: 2px solid transparent;
-    font-size: 16px;
-    /* height: 20px; */
-    margin: 0;
     outline: 0;
     padding: 15px;
     width: 100%;
     background-color: #f5f5f5;
     color: #261c15;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     margin-bottom: 30px;
     transition: all 200ms;
     border: 1px solid #261c15;
@@ -225,14 +219,14 @@
   
   input::placeholder,
   textarea::placeholder {
-    color: #f06a43;
+    color: #F96E46;
   }
   
   input:hover,
   input:focus,
   textarea:hover,
   textarea:focus {
-    border: 2px solid #f06a43;
+    border: 2px solid #F96E46;
   }
   
   
@@ -247,11 +241,11 @@
   select:focus,
   textarea:hover,
   textarea:focus {
-    border: 2px solid #f06a43;
+    border: 2px solid #F96E46;
   }
  
   .apptsformbutton {
-    padding: 19px 39px ;
+    padding: 20px 40px ;
     color: #fff;
     background-color: #129490;
     font-size: 18px;
@@ -260,35 +254,26 @@
     border: none;
     width: 100%;
     margin-bottom: 10px;
-    transition: all 200ms;
   }
   
   .apptsformbutton:hover,
   .apttsformbutton:focus {
     background-color: #4fc5c1;
+    color:#261c15;
 
   }
   
   fieldset {
     margin-bottom: 10px;
-    border: none;
+    
   }
   
-  legend {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-  }
-  
+ 
   label {
     display: block;
     margin-bottom: 8px;
   }
   
-  label.light {
-    font-weight: 300;
-    display: inline;
-  }
-
   .flexboxname{
     display:block;
   }
@@ -301,29 +286,44 @@
   .flexboxphone{
     flex: 1 1 8em;
   }
-  .sideimagepets{
-    min-height: 0;
-  }
+  
 
+.appointments2card{
+  height:40vh;
+  width: 100%;
+}
 
-
-
+.appts2card-p{
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+}
+.appts2card-title{
+  font-family: 'Spectral', serif;
+  font-size: 2rem;
+}
+.homepagefooter{
+  height: 30vh;
+}
 @media only screen and (min-width:1080px){
-    .img1{width:22%;
+
+  .flexbox{
+    justify-content: space-between ;
+  }
+    .img1{width:21%;
         height:99%;
         margin-right: 3rem;}
 
-        .img2{width:22%;
+        .img2{width:21%;
         height:99%;
         margin-right: 3rem;}
 
-        .img3{width:22%;
+        .img3{width:21%;
         height:99%;
         margin-right: 3rem;}
 
-        .img4{width:22%;
-        height:99%;}
-
+        .img4{width:21%;
+        height:99%;
+      
 
         .img5{
             background-color:#F96E46;
@@ -361,6 +361,7 @@
     grid-template-rows: 1fr 4fr;
     padding: 10px;
     gap:10px;
+    margin-top: 15px;
   }
   .storehours{
     grid-column: 2/3;
@@ -370,8 +371,8 @@
     grid-column: 1/2;
     grid-row:1/3;
     max-height: 700px;
-  }
-  .sideimagepets{
+   } 
+   .sideimagepets{
   background-image: url("/img/catdog.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -380,7 +381,7 @@
   grid-column: 2/3;
   grid-row: 2/3;
   height: 97vh;
-  }
+  } 
   .flexboxname{
     display: flex;
     gap:20px;
@@ -389,16 +390,13 @@
   .flexboxfirstname{
     width:30vw;
     padding:10px;
-    /* max-height: 30px; */
 
   }
   .flexboxlastname{
     width:30vw;
-    /* max-height: 30px; */
+
   }
-  /* .flexboxphone{
-    width:15%;
-  } */
+  
 .petinfoflexbox{
   display: flex;
   justify-content: flex-start;
@@ -413,4 +411,20 @@
   display: flex;
   gap: 20px;
 }
+.appointments2card{
+  height:80vh;
+}
+.footer{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+.homepagefooter{
+  height:10vh;
+}
+.appointments2{
+  width: 88vw;
+}
+
 }
